@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mrpeng.dialogdemo.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mrpeng.dialogdemo.ZhifubaoActivity">
+    <RelativeLayout
+        android:background="@mipmap/pic_my_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/text"
+            android:visibility="invisible"
+            android:background="@color/colorPrimary"
+            android:text="请使用安全键盘,输入你的支付密码"
+            android:textColor="#ffffff"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.mrpeng.dialogdemo.MyEt
+            android:id="@+id/myet"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           />
+        <com.example.mrpeng.dialogdemo.MyLinearLayoutCompat
+            android:orientation="vertical"
+            app:divider="@drawable/line"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="@dimen/x10"
+                app:child_visibility="show"
+                android:text="22222222222222222222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                app:child_visibility="none"
+                android:text="22222222222222222222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:child_visibility="none"
+                android:text="22222222222222222222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:child_visibility="show"
+                android:text="22222222222222222222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="22222222222222222222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.example.mrpeng.dialogdemo.MyLinearLayoutCompat>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</com.example.mrpeng.dialogdemo.MyScrollView>

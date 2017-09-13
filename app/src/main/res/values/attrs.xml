@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="MyLinearLayoutCompat">
+        <attr name="divider"/>
+        <attr name="dividerPadding" format="dimension"></attr>
+        <attr name="child_visibility">
+            <flag name="none" value="0" />
+            <flag name="show" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
